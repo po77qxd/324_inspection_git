@@ -64,19 +64,32 @@ Commands utilisées:
 
 ### Partie 4 — Branches et fusions
 
-9. Quelles branches ont été fusionnées dans `main` ?  
+9. Quelles branches ont été fusionnées dans `main` ?
+`feature/header`,`feature/login`,`hotfix/type`
 10. Quelle branche **n'a pas été fusionnée** ? Pourquoi, selon vous ? 
+`experiment/dark-mode`, car c'est experimental donc pas fini.
+
+Commandes utilisées:
+- `git branch -a --merged main`
+- `git branch -a --no-merged main`
 
 ### Partie 5 — Analyse du contenu
 
 11. Quelle est la **différence principale** entre les fichiers `index.html` dans les versions `v0.1` et `v0.2` et quelle commande permet de le voir rapidement ?  
+Le header a été ajouté.
 12. Que contient la branche `feature/login` ?  
-13. Dans quelle branche a été ajouté le code pour le **mode sombre** ?  
+Le code du login
+13. Dans quelle branche a été ajouté le code pour le **mode sombre** ? 
+`experiment/dark-mode`
 14. Quelle bonne pratique de sécurité est évoquée dans les commits du fichier `config.js` ?
+Ne pas mettre des clé API dans le code.
+
+Commandes utilisées:
+- `git diff v0.1 v0.2 index.html`
 
 ### Partie 6 — Réflexion
 
-15. Pourquoi est-il important de **taguer** des versions dans un projet ?  
+15. Pourquoi est-il important de **taguer** des versions dans un projet ? 
 16. Que peut-on déduire du style de travail de l'équipe à partir de cet historique GIT ?  
 
 Bonne chance, et surtout... **ne vous perdez pas dans le log !** 😉
